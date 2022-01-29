@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttonOuter {
+  background-color: cornsilk;
+  width: 60px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px/50%;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.buttonInner {
+  background-color: rgb(160, 156, 138);
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+  left: 0px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.toggled {
+  transform: translateX(34px);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hitbox {
+  /* this class is mostly discriptive (z-index property is not necessary) */
+  z-index: 10;
+}
